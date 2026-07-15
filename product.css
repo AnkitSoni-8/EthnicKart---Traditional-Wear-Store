@@ -1,0 +1,349 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#74ebd5,#ACB6E5);
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   Product Image
+=========================== */
+
+#mainImage{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+#mainImage:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ===========================
+   Small Images
+=========================== */
+
+.small-img{
+
+    width:100%;
+
+    height:120px;
+
+    object-fit:cover;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    border-radius:10px;
+
+}
+
+.small-img:hover{
+
+    transform:scale(1.08);
+
+    border:3px solid orange;
+
+}
+
+/* ===========================
+   Product Details
+=========================== */
+
+h2{
+
+    font-weight:bold;
+
+}
+
+.badge{
+
+    font-size:15px;
+
+    padding:8px 12px;
+
+}
+
+.card{
+
+    border:none;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   Price
+=========================== */
+
+.text-danger{
+
+    font-size:32px;
+
+    font-weight:bold;
+
+}
+
+del{
+
+    margin-left:10px;
+
+}
+
+/* ===========================
+   Size Buttons
+=========================== */
+
+.btn-outline-dark{
+
+    border-radius:30px;
+
+    padding:8px 22px;
+
+    transition:.3s;
+
+}
+
+.btn-outline-dark:hover{
+
+    background:#000;
+
+    color:#fff;
+
+}
+
+/* ===========================
+   Quantity Box
+=========================== */
+
+#qty{
+
+    width:120px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+}
+
+/* ===========================
+   Add to Bag Button
+=========================== */
+
+.btn-warning{
+
+    border-radius:35px;
+
+    font-weight:bold;
+
+    padding:12px 28px;
+
+    transition:.3s;
+
+}
+
+.btn-warning:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+/* ===========================
+   Wishlist Button
+=========================== */
+
+.btn-outline-danger{
+
+    border-radius:35px;
+
+    font-weight:bold;
+
+    padding:12px 28px;
+
+    transition:.3s;
+
+}
+
+.btn-outline-danger:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   Delivery & Offer Cards
+=========================== */
+
+.card{
+
+    margin-top:20px;
+
+}
+
+.card h5{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.card ul{
+
+    padding-left:20px;
+
+}
+
+.card li{
+
+    margin-bottom:8px;
+
+}
+
+/* ===========================
+   Pincode
+=========================== */
+
+#pincode{
+
+    border-radius:10px 0 0 10px;
+
+}
+
+.input-group .btn{
+
+    border-radius:0 10px 10px 0;
+
+}
+
+/* ===========================
+   Back Button
+=========================== */
+
+.btn-dark{
+
+    border-radius:30px;
+
+    padding:10px 30px;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+#mainImage{
+
+    height:500px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+#mainImage{
+
+    height:400px;
+
+}
+
+.small-img{
+
+    height:80px;
+
+}
+
+h2{
+
+    margin-top:30px;
+
+    font-size:28px;
+
+}
+
+.text-danger{
+
+    font-size:28px;
+
+}
+
+.btn-warning,
+.btn-outline-danger{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:576px){
+
+#mainImage{
+
+    height:320px;
+
+}
+
+.small-img{
+
+    height:70px;
+
+}
+
+.navbar-brand{
+
+    font-size:22px;
+
+}
+
+}

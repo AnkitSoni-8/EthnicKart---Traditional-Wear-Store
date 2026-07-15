@@ -1,0 +1,1165 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   GLOBAL CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+section{
+    padding:90px 0;
+}
+
+.container{
+    max-width:1200px;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    background:#6d0019;
+
+    padding:15px 0;
+
+    transition:.4s;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+
+}
+
+.navbar-brand{
+
+    color:#FFD700 !important;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:15px;
+
+    transition:.4s;
+
+}
+
+.nav-link:hover{
+
+    color:#FFD700 !important;
+
+}
+
+.btn-warning{
+
+    background:#FFD700;
+
+    border:none;
+
+    color:#000;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.btn-warning:hover{
+
+    background:#ffcc00;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline-light:hover{
+
+    color:#000;
+
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1400");
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    line-height:30px;
+
+    margin-bottom:30px;
+
+}
+
+.hero-image{
+
+    border-radius:20px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+
+    transition:.5s;
+
+}
+
+.hero-image:hover{
+
+    transform:scale(1.03);
+
+}
+
+.badge{
+
+    font-size:15px;
+
+    padding:10px 18px;
+
+}
+
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+#about{
+
+    background:white;
+
+}
+
+#about h2{
+
+    color:#6d0019;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+#about p{
+
+    line-height:30px;
+
+    color:#555;
+
+}
+
+.about-box{
+
+    background:#fff;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+    transition:.4s;
+
+}
+
+.about-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.about-box h3{
+
+    color:#6d0019;
+
+    font-size:35px;
+
+    font-weight:700;
+
+}
+
+.about-box p{
+
+    margin-top:10px;
+
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+section h2{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    color:#6d0019;
+
+    margin-bottom:20px;
+
+}
+
+section p{
+
+    font-size:17px;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   FEATURED COLLECTION
+=========================== */
+
+#collection{
+
+    background:#f8f8f8;
+
+}
+
+.collection-card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.collection-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.2);
+
+}
+
+.collection-card img{
+
+    height:300px;
+
+    object-fit:cover;
+
+}
+
+.collection-card .card-body{
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.collection-card h5{
+
+    color:#6d0019;
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+.collection-card p{
+
+    color:#666;
+
+    margin:15px 0;
+
+}
+
+/* ===========================
+   PRODUCT SECTION
+=========================== */
+
+#products{
+
+    background:#ffffff;
+
+}
+
+.product-card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.2);
+
+}
+
+.product-card img{
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.product-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.product-card .card-body{
+
+    padding:22px;
+
+    text-align:center;
+
+}
+
+.product-card h5{
+
+    color:#6d0019;
+
+    font-size:23px;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+.product-card p{
+
+    color:#555;
+
+    font-size:15px;
+
+    line-height:26px;
+
+    min-height:70px;
+
+}
+
+.product-card .badge{
+
+    font-size:13px;
+
+    margin-bottom:15px;
+
+}
+
+.product-card .btn{
+
+    width:100%;
+
+    border-radius:30px;
+
+    padding:10px;
+
+    transition:.3s;
+
+}
+
+.product-card .btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   COMMON CARD EFFECT
+=========================== */
+
+.card{
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+}
+
+/* ===========================
+   IMAGE ZOOM EFFECT
+=========================== */
+
+.card img{
+
+    transition:.5s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   BUTTON EFFECT
+=========================== */
+
+button{
+
+    cursor:pointer;
+
+}
+
+button:focus{
+
+    outline:none;
+
+    box-shadow:none;
+
+}
+
+.btn{
+
+    transition:.3s ease;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+   PRODUCT GRID SPACING
+=========================== */
+
+.row.g-4{
+
+    row-gap:30px;
+
+}
+
+
+
+
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+#why{
+
+    background:#fff8f2;
+
+}
+
+#why .col-lg-3{
+
+    transition:.4s;
+
+}
+
+#why .col-lg-3:hover{
+
+    transform:translateY(-10px);
+
+}
+
+#why i{
+
+    color:#FFD700;
+
+    transition:.4s;
+
+}
+
+#why .col-lg-3:hover i{
+
+    transform:rotate(10deg) scale(1.1);
+
+}
+
+#why h4{
+
+    color:#6d0019;
+
+    font-weight:600;
+
+    margin-top:15px;
+
+}
+
+#why p{
+
+    color:#666;
+
+    line-height:28px;
+
+}
+
+/* ===========================
+   MISSION & VISION
+=========================== */
+
+#mission{
+
+    background:#ffffff;
+
+}
+
+#mission .card{
+
+    border:none;
+
+    border-radius:18px;
+
+    transition:.4s;
+
+    padding:20px;
+
+}
+
+#mission .card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+#mission h3{
+
+    color:#6d0019;
+
+    font-weight:700;
+
+    margin:20px 0;
+
+}
+
+#mission p{
+
+    color:#555;
+
+    line-height:28px;
+
+}
+
+#mission i{
+
+    color:#FFD700;
+
+}
+
+/* ===========================
+   WHOLESALE SUPPLY
+=========================== */
+
+#wholesale{
+
+    background:#f5f5f5;
+
+}
+
+#wholesale .card{
+
+    border:none;
+
+    border-radius:18px;
+
+    transition:.4s;
+
+    padding:20px;
+
+}
+
+#wholesale .card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+#wholesale h4{
+
+    color:#6d0019;
+
+    margin:15px 0;
+
+}
+
+#wholesale p{
+
+    color:#666;
+
+}
+
+#wholesale i{
+
+    color:#FFD700;
+
+}
+
+/* ===========================
+   CUSTOMER BENEFITS
+=========================== */
+
+#benefits{
+
+    background:#ffffff;
+
+}
+
+#benefits .card{
+
+    border:none;
+
+    border-radius:18px;
+
+    transition:.4s;
+
+    padding:20px;
+
+}
+
+#benefits .card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+#benefits h5{
+
+    color:#6d0019;
+
+    margin-top:15px;
+
+}
+
+#benefits p{
+
+    color:#666;
+
+}
+
+#benefits i{
+
+    color:#FFD700;
+
+}
+
+/* ===========================
+   ICONS
+=========================== */
+
+.fa-award,
+.fa-truck,
+.fa-tags,
+.fa-users,
+.fa-eye,
+.fa-bullseye,
+.fa-store,
+.fa-boxes-stacked,
+.fa-truck-fast,
+.fa-certificate,
+.fa-indian-rupee-sign,
+.fa-headset,
+.fa-thumbs-up{
+
+    font-size:55px;
+
+}
+
+/* ===========================
+   SECTION ANIMATION
+=========================== */
+
+section{
+
+    animation:fadeIn 1s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ===========================
+   CONTACT SECTION
+=========================== */
+
+#contact{
+
+    background:#f8f8f8;
+
+}
+
+#contact h4{
+
+    color:#6d0019;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+#contact p{
+
+    font-size:17px;
+
+    color:#555;
+
+    line-height:30px;
+
+}
+
+#contact i{
+
+    color:#FFD700;
+
+    margin-right:10px;
+
+}
+
+#contact img{
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+/* ===========================
+   GOOGLE MAP
+=========================== */
+
+#map{
+
+    background:#ffffff;
+
+}
+
+#map iframe{
+
+    width:100%;
+
+    height:450px;
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   CALL TO ACTION
+=========================== */
+
+.cta{
+
+    background:#6d0019;
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.cta h2{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    color:#eee;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    background:#1b1b1b;
+
+    color:#fff;
+
+    padding:70px 0 20px;
+
+}
+
+.footer h3,
+.footer h4{
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    color:#ddd;
+
+    line-height:28px;
+
+}
+
+.footer ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer ul li{
+
+    margin-bottom:10px;
+
+}
+
+.footer ul li a{
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer ul li a:hover{
+
+    color:#FFD700;
+
+    padding-left:8px;
+
+}
+
+.footer hr{
+
+    border-color:#555;
+
+    margin:30px 0;
+
+}
+
+.footer .text-center{
+
+    color:#ccc;
+
+}
+
+/* ===========================
+   WHATSAPP BUTTON
+=========================== */
+
+.whatsapp-btn{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:60px;
+
+    height:60px;
+
+    background:#25D366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    z-index:9999;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+}
+
+.whatsapp-btn:hover{
+
+    background:#1ebd5a;
+
+    transform:scale(1.1);
+
+    color:white;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:991px){
+
+.hero{
+
+    text-align:center;
+
+    padding-top:120px;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero-image{
+
+    margin-top:40px;
+
+}
+
+.nav-link{
+
+    margin:10px 0;
+
+}
+
+#about img{
+
+    margin-bottom:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+section{
+
+    padding:70px 0;
+
+}
+
+section h2{
+
+    font-size:30px;
+
+}
+
+.card img{
+
+    height:220px;
+
+}
+
+#map iframe{
+
+    height:300px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.navbar-brand{
+
+    font-size:20px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    margin-bottom:10px;
+
+}
+
+.hero{
+
+    min-height:90vh;
+
+}
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.whatsapp-btn{
+
+    width:55px;
+
+    height:55px;
+
+    font-size:26px;
+
+}
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#6d0019;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#8a0022;
+
+}

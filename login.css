@@ -1,0 +1,296 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:linear-gradient(135deg,#74ebd5,#9face6);
+
+    position:relative;
+
+}
+
+/* ===========================
+   Crystal Water Effect
+=========================== */
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:rgba(255,255,255,.25);
+
+    border-radius:50%;
+
+    top:-120px;
+
+    left:-120px;
+
+    filter:blur(90px);
+
+}
+
+body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    background:rgba(255,255,255,.18);
+
+    border-radius:50%;
+
+    bottom:-120px;
+
+    right:-120px;
+
+    filter:blur(100px);
+
+}
+
+/* ===========================
+   Login Card
+=========================== */
+
+.login-card{
+
+    position:relative;
+
+    z-index:10;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.3);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.login-card h2{
+
+    color:#0d6efd;
+
+    font-weight:700;
+
+}
+
+.login-card p{
+
+    color:#333;
+
+}
+
+.form-control{
+
+    height:48px;
+
+    border-radius:10px;
+
+}
+
+.form-control:focus{
+
+    box-shadow:none;
+
+    border-color:#0d6efd;
+
+}
+
+/* ===========================
+   Input Group
+=========================== */
+
+.input-group .btn{
+
+    border-radius:0 10px 10px 0;
+
+}
+
+.input-group .btn i{
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   Remember Me & Forgot Password
+=========================== */
+
+.form-check-label{
+
+    color:#333;
+
+    font-size:15px;
+
+}
+
+.forgot-password{
+
+    color:#0d6efd;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.forgot-password:hover{
+
+    color:#084298;
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+   Login Button
+=========================== */
+
+.login-btn{
+
+    height:50px;
+
+    border-radius:30px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+/* ===========================
+   Create Account
+=========================== */
+
+.create-account{
+
+    color:#0d6efd;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.create-account:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+   Back to Home Button
+=========================== */
+
+.btn-outline-light{
+
+    border-radius:30px;
+
+    color:#000;
+
+    border:2px solid #fff;
+
+    background:rgba(255,255,255,.3);
+
+}
+
+.btn-outline-light:hover{
+
+    background:#fff;
+
+    color:#000;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.login-card{
+
+    padding:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.login-card{
+
+    padding:25px;
+
+}
+
+.login-card h2{
+
+    font-size:28px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.login-card{
+
+    margin:20px;
+
+    padding:20px;
+
+}
+
+.login-btn{
+
+    font-size:16px;
+
+}
+
+}
